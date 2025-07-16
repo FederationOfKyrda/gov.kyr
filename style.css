@@ -1,0 +1,113 @@
+body {
+    background-image: url("Images/background.png");
+    background-size: 4%;
+}
+
+.info-div {
+    width: 900px;
+    height: 1000px;
+    background: rgb(255, 255, 255);
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: solid;
+    border-color: rgb(255, 255, 255);
+}
+
+.info-header {
+    width: 1000px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: solid;
+    border-color: rgb(255, 255, 255);
+}
+
+/* more important divs */
+
+.container {
+  display: flex;        /* reminder : puts items side by side */
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap; /* so it doesnt wraps my text when theres an image next to it */
+}
+
+.container2 {
+  display: flex;        /* reminder : puts items side by side */
+  align-items: center;
+  gap: 10px;
+}
+
+/* small space of useless text here because i feel i'm gonna get lost in the css */
+/* below is the coloring for the a aka href */
+
+a:link {
+  color: #008cff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #008cff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(0, 38, 255);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(175, 207, 255);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* above is the coloring for the a aka href */
+
+.big-text {
+    font-size: 50px;
+    white-space: nowrap;
+}
+
+.medium-text {
+    font-size: 10px;
+}
+
+.small-text {
+    font-size: 5px;
+    white-space: nowrap;
+}
+
+.no-wrap-ffs {
+    white-space: nowrap;
+}
+
+    html { /* This is for the letters effect */
+            padding: 1em;
+            color: #eee;
+            font-size: 1em;
+            line-height: 1;
+            text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+            letter-spacing: 0.125em;
+            animation-duration: 0.01s;
+            animation-name: textflicker;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+    }
+
+    @keyframes textflicker {
+    from {
+        text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+    }
+    to {
+        text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+    }
+    }
+
+    .scanLines {
+        background: -webkit-repeating-linear-gradient(top, transparent 0px, transparent 1px, rgba(0,0,0,0.25) 5px, rgba(0,0,0,0.25) 2px);
+        background: -moz-repeating-linear-gradient(top, transparent 0px, transparent 1px, rgba(0,0,0,0.25) 5px, rgba(0,0,0,0.25) 2p);
+    }
